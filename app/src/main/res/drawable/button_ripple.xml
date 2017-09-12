@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/colorSecondary" android:state_pressed="true"/>
+    <item android:drawable="@color/dot_light_screen1" android:state_focused="true"/>
+    <item android:drawable="@color/colorButtonDeActive"/>
+</selector>

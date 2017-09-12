@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:padding="8dp"
+            android:id="@+id/idImgSourceDest"
+            android:layout_width="32dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_source_dest" />
+
+        <LinearLayout
+            android:layout_toEndOf="@+id/idImgSourceDest"
+            android:layout_toRightOf="@+id/idImgSourceDest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/idInputSourceAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="@string/current_location"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorTextDeActive" />
+
+            <TextView
+                android:id="@+id/idInputDestinationAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:hint="@string/set_your_destination"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/idDestLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/idNavigation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_navigation" />
+
+</RelativeLayout>

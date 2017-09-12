@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">GoogleMapsApi</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Earnings</item>
+        <item>Ratings</item>
+        <item>Offers</item>
+        <item>Account</item>
+    </string-array>
+
+
+    <string name="gps.lable.gps">Warning</string>
+    <string name="gps.lable.warning_message">You need to start GPS to display Route on Map. Would you like to Enable it?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+    <string name="msg_please_check_internet_connection">Please check internet connection</string>
+    <string name="maps_api">MAPS API</string>
+    <string name="map_events">Map events</string>
+    <string name="set_your_destination">Set your destination</string>
+    <string name="current_location">Current location</string>
+    <string name="normal">Normal</string>
+    <string name="satellite">Satellite</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="terrain">Terrain</string>
+    <string name="custom_map_pins">Custom map pins</string>
+    <string name="green">GREEN</string>
+    <string name="magenta">MAGENTA</string>
+    <string name="violet">VIOLET</string>
+    <string name="yellow">YELLOW</string>
+    <string name="cyan">CYAN</string>
+    <string name="finding_your_location">Finding your location</string>
+    <string name="enable_google_places">Enable google places</string>
+
+
+</resources>

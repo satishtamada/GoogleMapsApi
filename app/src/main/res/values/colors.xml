@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3b3b44</color>
+    <color name="colorPrimaryDark">#2a2a31</color>
+    <color name="colorSecondary">#27ccc0</color>
+    <color name="colorBgProgressBar">#13EBDC</color>
+    <color name="colorButtonDeActive">#27ccc0</color>
+    <color name="colorTextDeActive">#7d7e82</color>
+    <color name="colorBgAddressText">#9c9db5</color>
+    <color name="colorBgAddressTextLayout">#babbcf</color>
+    <color name="colorBgAddressTextShadow">#5c5e78</color>
+    <color name="colorEmptyRides">#7f858a</color>
+
+    <color name="colorAccent">#7d7e82</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteTrans">#99ffffff</color>
+    <color name="colorTabSelect">#27ccc0</color>
+    <color name="colorFillShape">#4527ccc0</color>
+    <color name="colorFillPoly">#45FF4081</color>
+    <color name="btn_cancel_boarder">#525151</color>
+    <color name="colorCabDisable">#4c4c4c</color>
+    <color name="lblColorCancel">#FF4081</color>
+    <color name="colorBlackTrans">#aa000000</color>
+    <color name="colorLblNoInternet">#F3FFBD</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorIcon">#898c8f</color>
+
+
+    <color name="colorAddressSearch">#8C000000</color>
+    <color name="colorFareTextBG">#99000000</color>
+    <color name="colorUserMobile">#ADFFFFFF</color>
+
+
+    <color name="bg_gradient_start">#30ac6d</color>
+    <color name="bg_gradient_end">#41c69e</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#7d7e82</color>
+    <color name="dot_dark_screen2">#7d7e82</color>
+    <color name="dot_dark_screen3">#7d7e82</color>
+    <color name="dot_dark_screen4">#7d7e82</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#20d2bb</color>
+    <color name="dot_light_screen2">#20d2bb</color>
+    <color name="dot_light_screen3">#20d2bb</color>
+    <color name="dot_light_screen4">#20d2bb</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

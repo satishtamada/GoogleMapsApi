@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/idCurrentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_current_location"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini" />
+
+        <ToggleButton
+            android:id="@+id/idToggleTraffic"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/check"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textOff=""
+            android:textOn="" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/idZoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_zoom_in"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/idZoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_zoom_out"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/idSwipeUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/swipe_up"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/idSwipeDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/swipe_down"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/idFooter"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/idUpArrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/up_arrow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/idLeftArrow"
+                android:layout_marginRight="15dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/left_arrow" />
+
+            <ImageView
+                android:id="@+id/idRightArrow"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/right_arrow" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/idDownArrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/down_arrow" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/idFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <RadioGroup
+                android:id="@+id/idRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:checked="true"
+                    android:padding="5dp"
+                    android:text="@string/normal"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="@string/satellite"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="@string/hybrid"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="@string/terrain"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+        </HorizontalScrollView>
+    </LinearLayout>
+</RelativeLayout>
