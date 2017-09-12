@@ -1,7 +1,7 @@
 #Google maps api
 This is a demo for the Google Maps Android API v2. 
 ##Overview
-This article will take a comprehensive look at working with google maps.It provides a simple way to present map api.
+This article will take a comprehensive look at working with files and folders.It provides a simple way to present a scrolling list of rows that can either files or folders.
 
 ##Pre-requisites
  * Android SDK v26
